@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>THE HALCYON JOB — a casino heist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="THE HALCYON JOB — a casino heist in three acts. Plan the job on the board, slip past guards, cameras and lasers, crack the vault, and vanish.">
+<style>
+  html, body { margin: 0; padding: 0; background: #07080f; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; }
+  #wrap { position: relative; width: 1280px; height: 720px; }
+  canvas { display: block; width: 1280px; height: 720px; background: #0a0c14; cursor: crosshair; }
+  #paused {
+    display: none; position: absolute; inset: 0; background: rgba(8,10,18,0.66);
+    color: #f2ead8; font-size: 34px; text-align: center; line-height: 720px; letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+  <div id="paused">PAUSED — press P to resume</div>
+</div>
+<noscript><p style="color:#f2ead8;text-align:center">THE HALCYON JOB needs JavaScript to run.</p></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
